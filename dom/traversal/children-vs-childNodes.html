@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM childNodes vs children</title>
+</head>
+<body>
+
+  <h2>DOM Navigation - childNodes & children</h2>
+  <!--
+  DOM Traversal Notes:
+  - childNodes → returns a NodeList (includes text nodes).
+  - children → returns an HTMLCollection (only elements).
+  -->
+  <script>
+    // Select body and head
+    let bodyElement = document.body;
+    let headElement = document.head;
+
+    // Get childNodes and children of body
+    let bodyChildNodes = document.body.childNodes;
+    let bodyChildren = document.body.children;
+
+    // Print in console
+    console.log("Body Element:", bodyElement);
+    console.log("Head Element:", headElement);
+
+    console.log("body.childNodes:", bodyChildNodes);
+    console.log("body.childNodes length:", bodyChildNodes.length);
+
+    console.log("body.children:", bodyChildren);
+    console.log("body.children length:", bodyChildren.length);
+  
+  </script>
+
+
+</body>
+</html>
